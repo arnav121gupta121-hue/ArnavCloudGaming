@@ -6,7 +6,7 @@
 <style>
 
 body{
-background:#0a0a0a;
+background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
 color:white;
 font-family:Arial;
 text-align:center;
@@ -15,41 +15,68 @@ padding:0;
 }
 
 h1{
-margin-top:40px;
-font-size:40px;
+margin-top:30px;
+font-size:42px;
 }
 
 .server{
+font-size:20px;
 color:#00ff88;
 font-weight:bold;
-font-size:20px;
 }
 
 .instructions{
 margin-top:30px;
 font-size:18px;
-line-height:35px;
+line-height:32px;
 }
 
 .games{
-margin-top:30px;
-font-size:20px;
-color:#00ff88;
+margin-top:40px;
+}
+
+.game-container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+margin-top:20px;
+}
+
+.game{
+width:200px;
+background:#111;
+border-radius:10px;
+padding:10px;
+box-shadow:0 0 15px rgba(0,255,150,0.5);
+}
+
+.game img{
+width:100%;
+border-radius:10px;
+}
+
+.game p{
+margin-top:8px;
+font-weight:bold;
 }
 
 .play-btn{
-margin-top:40px;
-padding:20px 40px;
-font-size:26px;
+margin-top:50px;
+padding:22px 50px;
+font-size:28px;
 background:#00ff88;
 color:black;
 border:none;
-border-radius:12px;
+border-radius:15px;
 cursor:pointer;
+box-shadow:0 0 20px #00ff88;
+transition:0.3s;
 }
 
 .play-btn:hover{
-background:#00cc6a;
+transform:scale(1.1);
+box-shadow:0 0 35px #00ff88;
 }
 
 </style>
@@ -60,17 +87,17 @@ background:#00cc6a;
 
 <h1>🎮 Arnav Steam Cloud Gaming</h1>
 
-<p class="server">Server Status: Online 🟢</p>
+<p class="server">Server Status: 🟢 Online</p>
 
 <div class="instructions">
 
-<h2>To Play With Arnav Cloud Game</h2>
+<h2>How To Play</h2>
 
 <p>1. Install Steam Link from Playstore</p>
 <p>2. Open Steam Link</p>
 <p>3. Enter the connection code from Arnav</p>
 <p>4. Connect to the PC</p>
-<p>5. Then Start Playing</p>
+<p>5. Start Playing</p>
 
 </div>
 
@@ -78,10 +105,29 @@ background:#00cc6a;
 
 <h2>Available Games</h2>
 
-<p>🏎 Forza Horizon 5</p>
-<p>🚗 Grand Theft Auto: San Andreas – Definitive Edition</p>
-<p>🥊 Tekken 7</p>
-<p>🕷 Amazing Spider-Man</p>
+<div class="game-container">
+
+<div class="game">
+<img src="https://upload.wikimedia.org/wikipedia/en/5/5f/Forza_Horizon_5_cover_art.jpg">
+<p>Forza Horizon 5</p>
+</div>
+
+<div class="game">
+<img src="https://upload.wikimedia.org/wikipedia/en/4/44/GTA_San_Andreas_Definitive_Edition.jpg">
+<p>GTA SA Definitive Edition</p>
+</div>
+
+<div class="game">
+<img src="https://upload.wikimedia.org/wikipedia/en/4/44/Tekken_7_cover_art.jpg">
+<p>Tekken 7</p>
+</div>
+
+<div class="game">
+<img src="https://upload.wikimedia.org/wikipedia/en/0/02/The_Amazing_Spider-Man_video_game_cover.jpg">
+<p>Amazing Spider-Man</p>
+</div>
+
+</div>
 
 </div>
 
